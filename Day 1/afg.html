@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online HTML Interpreter</title>
+    <style>/
+    </style>
+</head>
+<body>
+    
+    <textarea id="input" rows="10" cols="50"></textarea>
+    
+    <button onclick="interpret()">Interpret</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        function interpret() {
+            var input = document.getElementById("input").value;
+            document.getElementById("output").innerHTML = input;
+        }
+    </script>
+</body>
+</html>
